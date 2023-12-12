@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dafka__.Page4"
+              BackgroundColor="#b69d6e">
+    <ContentPage.Content>
+        <StackLayout>
+            
+                <Label Text="ALFA"
+                   TextColor="Black"
+                VerticalOptions="Start" 
+                   HorizontalOptions="Center"
+                   FontSize="50"
+                   CharacterSpacing="2"
+                  />
+            <Frame Margin="15" HeightRequest="30" BorderColor="Black" CornerRadius="90" BackgroundColor="white">
+                <Label Text="Вы записаны на услугу" BackgroundColor="White" TextColor="Black" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            </Frame>
+            <Label Text="Ждем Вас по адресу &#10; ул. Разбитых фонарей 23с1 &#10; в назначенное время!" FontSize="27" HorizontalTextAlignment="Center" TextColor="black" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:tool="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:dafka__="clr-namespace:dafka__"
+             x:Class="dafka__.register"
+             BackgroundColor="#b69d6e"
+             >
+   
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ALFA"
+                   TextColor="Black"
+                VerticalOptions="Start" 
+                   HorizontalOptions="Center"
+                   FontSize="50"
+                   CharacterSpacing="2"
+                 />
+
+            <Label Margin="5, 0, 5, 0" Text="Имя:" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
+            <Frame Margin="8" HeightRequest="39" BorderColor="Black" CornerRadius="20" BackgroundColor="#b69d6e" >
+                <Entry x:Name="name" Placeholder="Введите имя" 
+                       PlaceholderColor="Black" 
+                       FontSize="16" 
+                       TextColor="black" 
+                       ClearButtonVisibility="WhileEditing">
+
+                   
+                </Entry>
+            </Frame>
+            <Label Margin="5, 0, 5, 0" Text="Фамилия:" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
+            <Frame Margin="8" HeightRequest="39" BorderColor="Black" CornerRadius="20" BackgroundColor="#b69d6e" >
+                <Entry x:Name="surname" Placeholder="Введите фамилию" 
+                       PlaceholderColor="Black" 
+                       FontSize="16" 
+                       TextColor="black" 
+                       ClearButtonVisibility="WhileEditing">
+
+
+                </Entry>
+            </Frame>
+            <Label Margin="5, 0, 5, 0" Text="Почта:" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
+            <Frame Margin="8" HeightRequest="39" BorderColor="Black" CornerRadius="20" BackgroundColor="#b69d6e" >
+                <Entry x:Name="mail" Placeholder="Введите почту" 
+                       PlaceholderColor="Black" 
+                       FontSize="16" 
+                       TextColor="black" 
+                       ClearButtonVisibility="WhileEditing">
+
+
+                </Entry>
+            </Frame>
+            <Label Margin="5, 0, 5, 0" Text="Номер телефона:" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
+            <Frame Margin="8" HeightRequest="40" BorderColor="Black" CornerRadius="20" BackgroundColor="#b69d6e" >
+                <Entry x:Name="tele" Placeholder="Введите номер телефона" 
+                       PlaceholderColor="Black" 
+                       FontSize="16" 
+                       TextColor="black" 
+                       ClearButtonVisibility="WhileEditing"
+                       >
+
+
+                </Entry>
+            </Frame>
+            <Label x:Name="errorMessages" Text="" TextColor="red" FontSize="20" HorizontalTextAlignment="Center"></Label>
+            <Frame Margin="15" HeightRequest="60" BorderColor="Black" CornerRadius="90" BackgroundColor="white">
+            <Button Text="Зарегистрироваться" Clicked="Reg" BackgroundColor="White" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+            </Frame>
+            
+                
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

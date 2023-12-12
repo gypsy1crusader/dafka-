@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dafka__.Page1"
+             BackgroundColor="#b69d6e">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ALFA"
+                   TextColor="Black"
+                VerticalOptions="Start" 
+                   HorizontalOptions="Center"
+                   FontSize="50"
+                   CharacterSpacing="2"
+                  />
+            <Frame Margin="15" HeightRequest="60" BorderColor="Black" CornerRadius="90" BackgroundColor="#eadebd">
+                <Button x:Name="cut" Text="Стрижка" Clicked="Haircut" BackgroundColor="#eadebd" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+            </Frame>
+            <Frame Margin="15" HeightRequest="60" BorderColor="Black" CornerRadius="90" BackgroundColor="#eadebd">
+                <Button x:Name="color" Text="Окрашивание" Clicked="Color" BackgroundColor="#eadebd" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+            </Frame>
+            <Frame Margin="15" HeightRequest="60" BorderColor="Black" CornerRadius="90" BackgroundColor="#eadebd">
+                <Button x:Name="beard" Text="Уход за бородой" Clicked="Beard" BackgroundColor="#eadebd" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+            </Frame>
+            <Frame Margin="15" HeightRequest="60" BorderColor="Black" CornerRadius="90" BackgroundColor="white">
+                <Button Text="Выбрать услуги" Clicked="Choose" BackgroundColor="White" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

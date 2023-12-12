@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dafka__.Page3"
+              BackgroundColor="#b69d6e">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ALFA"
+                   TextColor="Black"
+                VerticalOptions="Start" 
+                   HorizontalOptions="Center"
+                   FontSize="50"
+                   CharacterSpacing="2"
+                  />
+            <Frame Margin="15" HeightRequest="60" BorderColor="Black" CornerRadius="90" BackgroundColor="#eadebd">
+                <RadioButton x:Name="KochI" Value="Кочегаров Иван" Content="Кочегаров Иван" TextColor="Black"  GroupName="Barbers"/>
+            </Frame>
+            <Frame Margin="15" HeightRequest="60" BorderColor="Black" CornerRadius="90" BackgroundColor="#eadebd">
+                <RadioButton x:Name="SotnikA" Value="Сотников Александр" Content="Сотников Александр" TextColor="Black"  GroupName="Barbers"/>
+            </Frame>
+            <Frame Margin="15" HeightRequest="60" BorderColor="Black" CornerRadius="90" BackgroundColor="#eadebd">
+                <RadioButton x:Name="SokolD" Value="Соколовский Даниил" Content="Соколовский Даниил" TextColor="Black"  GroupName="Barbers" />
+            </Frame>
+            <Label x:Name="errorMessage" Text="" TextColor="red" FontSize="20" HorizontalTextAlignment="Center"></Label>
+            <Frame Margin="15" HeightRequest="60" BorderColor="Black" CornerRadius="90" BackgroundColor="white">
+                <Button Text="Выбрать мастера" Clicked="End" BackgroundColor="White" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="dafka__.Page2"
+             BackgroundColor="#b69d6e">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ALFA"
+                   TextColor="Black"
+                VerticalOptions="Start" 
+                   HorizontalOptions="Center"
+                   FontSize="50"
+                   CharacterSpacing="2"
+                  />
+            <Label Margin="5, 0, 5, 0" Text="Выберите дату:" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
+            <Frame Margin="8" HeightRequest="50" BorderColor="Black" CornerRadius="20" BackgroundColor="#b69d6e" >
+                <Label x:Name="header" Text="Дата" FontSize="Large" />
+                <DatePicker MinimumDate="12/12/2023"
+            MaximumDate="12/31/2023"
+            />
+            </Frame>
+            <Label Margin="5, 0, 5, 0" Text="Выберите время:" TextColor="Black" FontSize="16" FontAttributes="Bold"/>
+            <Frame Margin="8" HeightRequest="50" BorderColor="Black" CornerRadius="20" BackgroundColor="#b69d6e" >
+                <Label x:Name="head1" Text="Время" FontSize="Large" />
+                <TimePicker x:Name="timePicker" Time="17:00:00" ></TimePicker>
+            </Frame>
+            
+            <Frame Margin="15" HeightRequest="60" BorderColor="Black" CornerRadius="90" BackgroundColor="white">
+                <Button Text="Забронировать" Clicked="Next" BackgroundColor="White" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
